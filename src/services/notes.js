@@ -1,13 +1,9 @@
 import axios from 'axios'
 const baseUrl = 'http://localhost:3001/notes'
 
-const cors = require('cors')
-
-app.use(cors())
-
 const getAll = () => {
   const request = axios.get(baseUrl)
-  return request.then(responses = > response.data)
+  return request.then(response => response.data)
   /*const nonExisting = {
     id: 10000,
     content: 'This note is not saved to server',
